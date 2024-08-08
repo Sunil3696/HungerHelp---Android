@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- AppBarLayout with Toolbar -->
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/app_bar_color"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                    android:titleTextColor="@android:color/white"
+                    android:title="Upload Your Food"/>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <EditText
+                android:id="@+id/etFoodItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Food Item"
+                android:textColorHint="#797979"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:background="@drawable/edit_text_border"
+                android:layout_marginBottom="20sp"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/etDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Description"
+                android:inputType="textMultiLine"
+                android:textColorHint="#797979"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:background="@drawable/edit_text_border"
+                android:layout_marginBottom="20sp"
+                android:lines="4" />
+
+            <Spinner
+                android:id="@+id/spinnerCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textColorHint="#797979"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:background="@drawable/edit_text_border"
+                android:layout_marginBottom="20sp"/>
+
+            <EditText
+                android:id="@+id/etQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Quantity"
+                android:textColorHint="#797979"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:background="@drawable/edit_text_border"
+                android:layout_marginBottom="20sp"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/etLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Location"
+                android:textColorHint="#797979"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:background="@drawable/edit_text_border"
+                android:layout_marginBottom="20sp"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/etAvailableTill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Available Till (yyyy-mm-dd)"
+                android:textColorHint="#797979"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:background="@drawable/edit_text_border"
+                android:layout_marginBottom="20sp"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/etNotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Notes"
+                android:inputType="textMultiLine"
+                android:textColorHint="#797979"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:background="@drawable/edit_text_border"
+                android:layout_marginBottom="20sp"
+                android:lines="3" />
+
+            <Button
+                android:id="@+id/btnSelectImages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_login"
+                android:text="Select Images" />
+
+            <TextView
+                android:id="@+id/tvSelectedImages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No images selected"
+                android:layout_marginTop="8dp" />
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:background="@drawable/button_login"
+                android:layout_marginTop="16dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

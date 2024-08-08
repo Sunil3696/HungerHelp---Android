@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Hunger Help</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="image_description">Food Image</string>
+    <string name="food_item">Food Item</string>
+    <string name="description">Description</string>
+    <string name="quantity">Quantity</string>
+    <string name="location">Location</string>
+    <string name="available_till">Available Till</string>
+    <string name="notes">Notes</string>
+</resources>

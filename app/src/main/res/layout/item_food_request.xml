@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/foodPicture"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/foodItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/foodPicture"
+        android:layout_marginLeft="16dp"
+        android:textStyle="bold"
+        android:textColor="#535353"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/foodPicture"
+        android:textColor="#626262"
+        android:layout_below="@id/foodItem"
+        android:maxLines="2"
+        android:layout_marginLeft="16dp"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_marginTop="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/foodPicture"
+        android:layout_below="@id/description"
+        android:textColor="#626262"
+        android:layout_marginLeft="16dp"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_marginTop="4dp"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/foodPicture"
+        android:layout_below="@id/location"
+        android:layout_marginLeft="16dp"
+        android:textColor="#626262"
+        android:textSize="14sp" />
+</RelativeLayout>

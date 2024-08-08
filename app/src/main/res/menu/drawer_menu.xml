@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@android:drawable/ic_menu_info_details"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_donate_food"
+            android:icon="@android:drawable/ic_menu_add"
+            android:title="Donate Food" />
+        <item
+            android:id="@+id/nav_view_requested_items"
+            android:icon="@android:drawable/ic_menu_view"
+            android:title="Requested Items" />
+        <item
+            android:id="@+id/nav_view_posted_items_request"
+            android:icon="@android:drawable/ic_menu_agenda"
+            android:title="Donated Items" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@android:drawable/ic_menu_close_clear_cancel"
+            android:title="Log out" />
+    </group>
+</menu>

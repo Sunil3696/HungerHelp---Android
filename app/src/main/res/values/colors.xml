@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="app_bar_color">#00897B</color>
+
+    <color name="green_color">#81C988</color>
+    <color name="black_pav_color">#222233</color>
+</resources>
